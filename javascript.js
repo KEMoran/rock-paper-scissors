@@ -19,6 +19,7 @@ function getComputerChoice()
     }
 }
 
+
 //A function to ensure the player's choice is valid
 function getPlayerChoice(answer)
 {   
@@ -31,6 +32,7 @@ function getPlayerChoice(answer)
     //Stick the first letter and the rest together
     answer = firstLetter + lastPart;
 }
+
 
 //A function that plays a round of Rock Paper Scissors
 function playRound(playerSelection, computerSelection)
@@ -96,13 +98,10 @@ function playRound(playerSelection, computerSelection)
     }
 }
 
+
 //Plays five rounds and announces the results at the end
 function game()
 {
-    //Creates variables for the player and computer scores
-    let playerScore = 0;
-    let computerScore = 0;
-
     //Play five rounds of the game
     for(let i = 0; i < 5; i++)
     {
@@ -129,16 +128,26 @@ function game()
     {
         console.log("The computer wins! Player Score: " + playerScore + ", Computer Score: " + computerScore);
     }
-    
     else
     {
         console.log("It's a tie! You both scored: " + playerScore);
     }
+
+    //Ask for player input if they want to play again
 }
+
+
+ //Creates variables for the player and computer scores
+ let playerScore = 0;
+ let computerScore = 0;
 
 
 //Runs the game
 game();
 
+
 //TO DO LIST
-//Needs to return to the start of the function if answer is invalid
+//Make sure it works as intended  :)
+//Repeat if they want to play again
+//Needs to return to the start of the function if answer is invalid  
+//Final check, than Git commit
