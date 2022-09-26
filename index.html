@@ -1,9 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <script src="javascript.js"></script>
+    <meta charset="UTF-8">
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/rock-paper-scissors.png">
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="title-div">
+        <h1>Rock Paper Scissors</h1>
+    </div>
+    <div class="result-div">
+        <h1 id="result">Which do you choose?</h1>
+        <h2 id="result-detail">First to score 5 is the winner</h2>
+    </div>
+
+    <div class="game-area">
+        <div class="the-player">
+            <h1>Player</h1>
+            <div class="test-box"">
+                <div class="player-info-div">
+                    <img src="images/avatar.png" alt="The player" class="player-img">
+                    <h2>PLayer score: <span class="score" id="player-score">0</span></h2>
+                </div>
+                    <div class="selector-div">
+                        <div class="selector player-selector" id="player-rock">
+                            <img src="images/rock.png" alt="rock" class="icon">
+                            <h3>Rock</h3>
+                        </div>
+                        <div class="selector player-selector" id="player-paper">
+                            <img src="images/paper.png" alt="paper" class="icon">
+                            <h3>Paper</h3>
+                        </div>
+                        <div class="selector player-selector" id="player-scissors">
+                            <img src="images/scissors.png" alt="scissors" class="icon">
+                            <h3>Scissors</h3>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="the-player">
+            <h1>Computer</h1>
+            <div class="test-box"">
+                <div class="player-info-div">
+                    <img src="images/laptop.png" alt="The computer" class="player-img">
+                    <h2>Computer score: <span class="score" id="computer-score">0</span></h2>
+                </div>
+                    <div class="selector-div">
+                        <div class="selector" id="computer-rock">
+                            <img src="images/rock.png" alt="rock" class="icon">
+                            <h3>Rock</h3>
+                        </div>
+                        <div class="selector" id="computer-paper">
+                            <img src="images/paper.png" alt="paper" class="icon">
+                            <h3>Paper</h3>
+                        </div>
+                        <div class="selector" id="computer-scissors">
+                            <img src="images/scissors.png" alt="scissors" class="icon">
+                            <h3>Scissors</h3>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div id="new-game-div">
+    </div>
 
 </body>
 </html>

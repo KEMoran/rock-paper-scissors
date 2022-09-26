@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("images/paper-background.jpg");
+    background-size: 100vw;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+/* TOP AREA */
+
+.title-div {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 25px;
+}
+
+.result-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.score-board
+{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.score-box {
+    border: 2px solid red;
+    background-color: aquamarine;
+    padding: 15px;
+    text-align: center;
+    margin: 0px 30px;
+}
+
+.buttons-div {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btn {
+    margin: 0px 20px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* GAME AREA */
+
+.game-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.test-box {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    max-width: 400px;
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.player-info-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.the-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-img {
+    width: 40px;
+    height: 40px
+}
+
+.score {
+    font-size: 32px;
+    color: yellow;
+}
+
+.selector-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+   
+}
+
+.selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px 0px black;
+}
+
+.player-selector:hover {
+    background-color: yellow;
+  }
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+.selected {
+    transform: scale(1.2);
+    border-color: #ffc600;
+    box-shadow: 3px 3px 0px 0px #ffc600;
+
+}
+
+
+/* PLAY AGAIN BUTTON */
+
+#new-game-div {
+    display: flex;
+    justify-content: center;
+}
